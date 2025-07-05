@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio de Jonathan</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-flex">
+    <header>
+      <h1>Jonathan Hernández Martinez</h1>
+    </header>
+
+    <section id="sobre-mi">
+      <img src="img/Jona.jpeg" alt="Foto de Jonathan Hernández" class="foto-perfil" />
+      <p>
+        Hola, soy un desarrollador de software apasionado por crear soluciones
+        prácticas. Me gusta aprender nuevas tecnologías y estar en constante aprendizaje.
+      </p>
+      <h2><a href="docs/CV.pdf">Sobre mí</a></h2>
+    </section>
+
+    <section id="contacto">
+     
+      <h2>Contacto</h2>
+      <p>Email: <span id="correo">dbzjona1@gmail.com</span></p>
+      <button onclick="copiarAlPortapapeles()">
+        <i class="fa-solid fa-copy"></i> Copiar correo
+      </button>
+       <div id="toast">Copiado al portapapeles</div>
+    </section>
+
+ 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

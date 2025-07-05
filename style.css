@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #f5f7fa; /* Fondo muy suave, casi blanco azulado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container-flex {
+  background: #ffffff; /* Fondo blanco */
+  max-width: 480px;
+  width: 100%;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#sobre-mi h2,
+#contacto h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05);
+}
+
+#sobre-mi p,
+#contacto p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button i {
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* Responsividad */
+@media (max-width: 500px) {
+  .container-flex {
+    padding: 20px 15px;
+  }
+  
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  #sobre-mi h2,
+  #contacto h2 {
+    font-size: 1.2rem;
+  }
+
+  .foto-perfil {
+    width: 110px;
+    height: 110px;
+  }
+}
+#toast {
+  visibility: hidden; /* oculto por defecto */
+  min-width: 200px;
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 14px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#toast.mostrar {
+  visibility: visible;
+  opacity: 1;
+}
+#sobre-mi a {
+  text-decoration: none;
+}
