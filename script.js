@@ -17,3 +17,5 @@ function mostrarToast() {
     toast.classList.remove("mostrar");
   }, 2500); // 2.5 segundos visible
 }
+
+
